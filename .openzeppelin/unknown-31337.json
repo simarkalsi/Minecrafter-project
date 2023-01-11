@@ -1,0 +1,150 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+    "txHash": "0x8f1e19c3af162df6d987362002b9af0901d106ea0c817809a1319e94d6c65ac1"
+  },
+  "proxies": [
+    {
+      "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "txHash": "0xa2c51a2b09f2da6181db5e5180232d725a222b5900e7c74005b57ea79f72a392",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "5da4c5e8f28210084358d5e3ab9ec94f3ab769c57c3173c4d9d883fa07921078": {
+      "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "txHash": "0x62eda261fbf6e5163c6cccd2fe531629ed9d4b12a15710b91de51779c6de44c3",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "token",
+            "offset": 2,
+            "slot": "0",
+            "type": "t_contract(IERC20)476",
+            "contract": "CrowdFund",
+            "src": "contracts\\CrowdFund.sol:32"
+          },
+          {
+            "label": "count",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "CrowdFund",
+            "src": "contracts\\CrowdFund.sol:33"
+          },
+          {
+            "label": "campaigns",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_uint256,t_struct(Campaign)492_storage)",
+            "contract": "CrowdFund",
+            "src": "contracts\\CrowdFund.sol:34"
+          },
+          {
+            "label": "pledgedAmount",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_uint256))",
+            "contract": "CrowdFund",
+            "src": "contracts\\CrowdFund.sol:35"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IERC20)476": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(uint256 => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Campaign)492_storage)": {
+            "label": "mapping(uint256 => struct CrowdFund.Campaign)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Campaign)492_storage": {
+            "label": "struct CrowdFund.Campaign",
+            "members": [
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "goal",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "pledged",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "startAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "endAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
