@@ -10,7 +10,7 @@
 
 Look at this illustration of the structure we plan to build first.
 
-<img src="./diagram/diagram.png" width="300px">
+<img src="./dia.png" width="300px">
 
 - The business owner calls the contract to launch a campaign using several justifications, including the number of tokens that must be raised for the campaign, its start timestamp, and its end timestamp.
 - As long as the campaign has not already begun, the business owner may cancel it at any time.
