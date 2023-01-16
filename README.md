@@ -1,3 +1,5 @@
+VIDEO TUTORIAL -> https://www.loom.com/share/70adc3c467714879834eaf1624090688
+
 # Create a Upgradable Crowdfund Smart Contract using Solidity
 
 ## What is Crowdfund
